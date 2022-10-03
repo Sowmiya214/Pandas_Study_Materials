@@ -1,20 +1,20 @@
 **PANDAS INTERVIEW QUESTIONS	**
 
     1. What is Pandas?
-    ✍Pandas is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.
-    ✍pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and        intuitive. It aims to be the fundamental high-level building block for doing practical, real-world data analysis in Python.
+         ✍Pandas is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.
+         ✍pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both                easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real-world data analysis in Python.
     2. What is Python pandas used for?
-    ✍Pandas is an open source Python package that is most widely used for data science/data analysis and machine learning tasks. It is built on top of another           package named Numpy, which provides support for multi-dimensional arrays
+         ✍Pandas is an open source Python package that is most widely used for data science/data analysis and machine learning tasks. It is built on top of another            package named Numpy, which provides support for multi-dimensional arrays
       ❓WHERE ITS USED:Pandas is mainly used for data analysis and associated manipulation of tabular data in DataFrames. Pandas allows importing data from various        file formats such as comma-separated values, JSON, Parquet, SQL database tables or queries, and Microsoft Excel.
-    3. What is a Series in Pandas?
+    3.What is a Series in Pandas?
     ✍ A Pandas Series is like a column in a table. It is a one-dimensional array holding data of any type.
       ❓HOW DO U WRITE PANDAS SERIES: You can create a series by calling pandas. Series() . An list, numpy array, dict can be turned into a pandas series. You should       use the simplest data structure that meets your needs.
     4. Mention the different Types of Data structures in pandas??
      🎁SERIES:
-    ✍ Pandas is a one-dimensional labeled array and capable of holding data of any type (integer, string, float, python objects, etc.)
-    ✍ Syntax: pandas.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)
+         ✍Pandas is a one-dimensional labeled array and capable of holding data of any type (integer, string, float, python objects, etc.)
+         ✍Syntax: pandas.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)
      🎁PARAMETERS:
-         👉 data: array- Contains data stored in Series.
+         👉data: array- Contains data stored in Series.
          👉index: array-like or Index (1d)
          👉dtype: str, numpy.dtype, or ExtensionDtype, optional
          👉name: str, optional
@@ -33,14 +33,14 @@
         👉Missing values from the dataframe can be filled by passing a value to the keyword fill_value. This keyword replaces the NaN values. 
     6. What are the key features of pandas library ?
      🎁15 PYTHON PANDAS FEATURES:
-        👉Handling of data. The Pandas library provides a really fast and efficient way to manage and explore data. ...
-        👉Alignment and indexing. ...
-        👉Handling missing data. ...
-        👉Cleaning up data. ...
-        👉Input and output tools. ...
-        👉Multiple file formats supported. ...
-        👉Merging and joining of datasets. ...
-        👉A lot of time series.
+        👉Handling of data. The Pandas library provides a really fast and efficient way to manage and explore data
+        👉Alignment and indexing
+        👉Handling missing data
+        👉Cleaning up data
+        👉Input and output tools
+        👉Multiple file formats supported
+        👉Merging and joining of datasets
+        👉A lot of time series
         👉Optimized performance
         👉Python support
         👉Visualize
@@ -53,9 +53,33 @@
     8. How can we create copy of series in Pandas?
     ✍copy() method is used to create a copy of a series object's indices and its data (values). And it returns a copied series object as a result. The copy()              method has one parameter which is “deep”. The default value for this deep parameter is True.
     9. What is Time Series in pandas?
+        👉Create the series of date
+        👉Work with data timestamp
+        👉Convert string data to timestamp
+        👉Slicing of data using timestamp
+        👉Resample your time series for different time period aggregates/summary statistics
+        👉Working with missing data
     10. Explain Categorical Data in Pandas?
+        ✍Categorical are a Pandas data type. A string variable consisting of only a few different values. Converting such a string variable to a categorical                 variable will save some memory. The lexical order of a variable is not the same as the logical order (“one”, “two”, “three”).
+        ❓HOW DO PANDAS HANDLED CATEGORICAL DATA:
+            ✍The basic strategy is to convert each category value into a new column and assign a 1 or 0 (True/False) value to the column. This has the benefit of                  not weighting a value improperly. There are many libraries out there that support one-hot encoding but the simplest one is using pandas ' .                          get_dummies() method.
     11. How will you create a series from dict in Python?
+         ✍A Series is a one-dimensional labeled array capable of holding any data type (integers, strings, floating point numbers, Python objects, etc.). It has               to be remembered that unlike Python lists, a Series will always contain data of the same type.   
+         ✍By using series methods using with index parameter and without using index parameter.
     12. What are operations on Series in pandas?
+         👉Creating a Series
+             ✍In the real world, a Pandas Series will be created by loading the datasets from existing storage, storage can be SQL Database, CSV file, and Excel                  file. Pandas Series can be created from the lists, dictionary, and from a scalar value etc. Series can be created in different ways, here are some                  ways by which we create a series:
+         👉Accessing element of Series
+               There are two ways through which we can access element of series, they are :
+                    👉Accessing Element from Series with Position
+                        ✍In order to access the series element refers to the index number. Use the index operator [ ] to access an element in a series. The index                             must be an integer. In order to access multiple elements from a series, we use Slice operation.
+                    👉Accessing Element Using Label (index)
+         👉Indexing and Selecting Data in Series
+             ✍Indexing in pandas means simply selecting particular data from a Series. Indexing could mean selecting all the data, some of the data from particular               columns. Indexing can also be known as Subset Selection.
+             🎁Indexing a Series using indexing operator [] :
+                  Indexing operator is used to refer to the square brackets following an object. The .loc and .iloc indexers also use the indexing operator to make                   selections. In this indexing operator to refer to df[ ].
+         👉Binary operation on Series
+         👉Conversion Operation on Series
     13. What is a DataFrame in pandas?
     14. What are the different ways in which a DataFrame can be created in Pandas?
     15. How will you create an empty DataFrame in pandas?
@@ -123,13 +147,13 @@
     77. Explain Series In pandas. How To Create Copy of Series In pandas?
     78. What Are the Different Ways A DataFrame Can Be Created In pandas?
     79. Difference between shallow copy and deep copy?
-       SHALLOW COPY:
+       🎁SHALLOW COPY:
            👉It is the copy of the collection structure, not the elements.	It is the copy of the collections with all 
            👉Affects the initial series.
            👉Shallow copy doesn’t replicate child objects.
            👉Creating a shallow copy is fast as compared to a deep copy.
            👉The copy is dependent on the original
-       DEEP COPY:
+       🎁DEEP COPY:
            👉It is the copy of the collections with all the elements in the original collection duplicated.
            👉Does not affect the initial series.
            👉Deep copy replicates child objects recursively.
